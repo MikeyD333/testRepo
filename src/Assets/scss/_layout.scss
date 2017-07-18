@@ -1,0 +1,31 @@
+// A declarative way of handling and managing z-indexes
+// Inspired by https://css-tricks.com/handling-z-index/
+$z-index-navigation-sub-menu: 1;
+$z-index-task-bar: 10;
+$z-index-hint: 200;
+$z-index-hint-active: 210;
+$z-index-target: 220;
+$z-index-select: 260;
+$z-index-fixed-header: 280;
+$z-index-action-button: 270;
+$z-index-draft: 270;
+$z-index-action: 275;
+$z-index-on-boarding: 290;
+$z-index-modal: 290;
+$z-index-snackbar: 310;
+
+// Responsive and grid related variables
+// Max width of the base container
+$base-max-width: 1440px;
+
+// Grid settings
+$grid-column-padding: 6px;
+$grid-columns: 18;
+
+// Smart breakpoint - when to go single column
+$grid-float-breakpoint: 768px;
+
+// Breakpoints
+$small: 480px;  // iPhoneish
+$medium: 768px; // iPadish
+$large: 1200px; // desktopish

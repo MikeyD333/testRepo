@@ -1,0 +1,72 @@
+/* Imports */
+
+@import 'colours';
+@import 'layout';
+@import 'mixins';
+@import 'fonts';
+
+/* General Styling */
+
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  &,
+  &:before,
+  &:after {
+    box-sizing: inherit;
+  }
+}
+
+// remove the font smooting forced by Toolkit
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+p,
+button,
+abbr,
+a,
+span,
+small {
+  font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+}
+
+body {
+  font-family: $font-family-opensans;
+  font-weight: $font-weight-normal;
+  font-size: 10px;
+
+  background-color: $color-light-bg;
+  color: $color-grey-30;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+a {
+  text-decoration: none;
+  cursor:pointer;
+  @include transition(.4s ease-in-out);
+
+  &:hover {
+  @include transition(.4s ease-in-out);
+  color: #FF0;
+
+  }
+
+  &:active {
+    @include transition(.4s ease-in-out);
+  }
+}
